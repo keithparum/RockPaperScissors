@@ -23,4 +23,11 @@ div.card-container {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+}
+
+div.card-container > div {
+  padding: 2rem;
+  height: auto;
+  border: 1px solid black;
 }
