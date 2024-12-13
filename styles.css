@@ -93,3 +93,7 @@ h2.sub-title {
 h2.sub-title > span {
   color: red;
 }
+
+.video-container {
+  display: none;
+}
