@@ -40,11 +40,14 @@ function decoyRockClick() {
 }
 
 function decoyPaperClick() {
+  console.log("Let the real games begin!");
+  youtubeVideo.innerHTML =
+    '<iframe src="https://giphy.com/embed/l0K4bRk3PeJhiyb6M" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/lionsgatehomeent-games-saw-jigsaw-l0K4bRk3PeJhiyb6M">via GIPHY</a></p>';
+  youtubeVideo.style.display = "block";
   messageBoard.innerHTML =
     "<h3>You clever pal! Here's your riddle.</h3><p>What do Sony, Microsoft and Sega have in common?</p><p><i>This</i> is where you shall continue this adventure.</p><p>Psst...if you still don't get it, just <span class='spoiler'>open the console ya doofus</span>~</p>";
-  youtubeVideo.style.display = "none";
+
   spoiler.classList.add("revealed");
-  console.gif();
 }
 
 function decoyScissorsClick() {
@@ -54,5 +57,3 @@ function decoyScissorsClick() {
 }
 
 // REAL GAME
-
-console.gif("");
