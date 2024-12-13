@@ -40,3 +40,16 @@ div.card-container > div > img {
 div.card-container > div > img:hover {
   transform: scale(1.2);
 }
+
+footer {
+  background-color: blueviolet;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: aqua;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid aqua;
+}
