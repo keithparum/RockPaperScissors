@@ -12,6 +12,9 @@ iframe {
 }
 
 body {
+  width: 100%;
+  background-color: black;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,4 +55,14 @@ footer {
   justify-content: center;
   align-items: center;
   border: 3px solid aqua;
+}
+
+header {
+  width: 100%;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
