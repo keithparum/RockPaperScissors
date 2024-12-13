@@ -10,11 +10,12 @@ decoyPaper.addEventListener("click", decoyPaperClick);
 decoyScissors.addEventListener("click", decoyScissorsClick);
 
 function decoyRockClick() {
-  console.log("You clicked on the ROCK!");
+  messageBoard.innerHTML = "<h3>You died crushed to the bones! Try again.</h3>";
 }
 function decoyPaperClick() {
-  console.log("You clicked on the PAPER!");
+  messageBoard.innerHTML =
+    "<h3>You clever pal! Here's your riddle.</h3><p>What do Sony, Microsoft and Sega have in common?</p><p><i>This</i> is where you shall continue this adventure.</p>";
 }
 function decoyScissorsClick() {
-  console.log("You clicked on the SCISSORS!");
+  messageBoard.innerHTML = "<h3>You died from a thousand cuts. Try again.</h3>";
 }
