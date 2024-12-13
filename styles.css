@@ -66,3 +66,29 @@ header {
   justify-content: center;
   align-items: center;
 }
+
+header > h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.messageBoard {
+  font-weight: 600;
+  font-size: 3rem;
+  color: red;
+}
+
+.message-container {
+  margin: 0 auto 2rem auto;
+}
+
+h2.chooseItem,
+h2.sub-title {
+  margin: 2rem auto;
+  color: brown;
+}
+
+h2.sub-title > span {
+  color: red;
+}
