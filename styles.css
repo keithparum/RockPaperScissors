@@ -100,8 +100,8 @@ h2.sub-title > span {
 
 /* Style for the spoiler */
 .spoiler {
-  background-color: black;
-  color: black;
+  background-color: red;
+  color: red;
   cursor: pointer;
   padding: 2px;
   border-radius: 4px;
@@ -109,12 +109,5 @@ h2.sub-title > span {
 }
 
 .spoiler:hover {
-  background-color: gray;
-}
-
-/* Reveal the text when clicked */
-.spoiler.revealed {
-  background-color: transparent;
-  color: inherit;
-  cursor: default;
+  background-color: black;
 }

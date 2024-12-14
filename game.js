@@ -40,7 +40,6 @@ function decoyRockClick() {
 }
 
 function decoyPaperClick() {
-  console.log("Let the real games begin!");
   youtubeVideo.innerHTML =
     '<iframe src="https://giphy.com/embed/l0K4bRk3PeJhiyb6M" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/lionsgatehomeent-games-saw-jigsaw-l0K4bRk3PeJhiyb6M">via GIPHY</a></p>';
   youtubeVideo.style.display = "block";
@@ -59,10 +58,29 @@ function decoyScissorsClick() {
 // REAL GAME
 
 const randomNum = function () {
-  return Math.floor(Math.random() * 3);
+  return Math.floor(Math.random() * 3) + 1;
 };
-console.log(randomNum());
-console.log(randomNum());
-console.log(randomNum());
-console.log(randomNum());
-console.log(randomNum());
+
+// Detecting that the console has been open
+Object.defineProperty(window, "detectConsole", {
+  get: function () {
+    console.log("Developer tools detected!");
+    console.log("Type startGame() in the console to begin the game.");
+    return "Console is open!";
+  },
+});
+
+console.log(detectConsole);
+
+// Starting the game
+console.log("Let the real games begin!");
+let player1 = "";
+
+window.startGame = function () {
+  player1 = window.prompt("Enter your name:");
+  console.log(
+    `Welcome, ${player1}! Let the game between you and Jigsaw begin!\n`
+  );
+};
+
+const jigsaw = "Jigsaw";
